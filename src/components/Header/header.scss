@@ -1,0 +1,73 @@
+@use '../../utils/style/variables.scss';
+
+header {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 26px;
+}
+
+ul.nav__list--large {
+    display: none;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.activeLink {
+    text-decoration: underline;
+}
+
+@media (min-width : 1040px) {
+
+    header {
+        margin: 45px 100px 45px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        gap: 57px
+    }
+
+}
+
+@media (min-width : 769px) {
+
+    ul.nav__list--small {
+        display: none;
+    }
+
+    ul.nav__list--large {
+        display: flex;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    header {
+        margin: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
