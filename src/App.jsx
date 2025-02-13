@@ -1,8 +1,8 @@
-import './App.css'
+import Home from './pages/home'
 
-import Header from '../src/components/Header/Header.jsx'
-import Footer from '../src/components/Footer/Footer.jsx'
-import Error from '../src/pages/404/404.jsx'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Error from './pages/404'
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -14,10 +14,10 @@ function App() {
     <Router>
         <Header />
         <Routes>
-            <Route path="/" element={<home />} />
+            <Route path="/" element={<Home />} />
 
-            {/* <Route path="/about" element={<about />} />
-            <Route path="/logement/:id" element={<logement />} /> */}
+            {/* <Route path="/about" element={<About />} />
+            <Route path="/logement/:id" element={<Logement />} /> */}
 
             <Route path="/*" element={<Error/>} />
         </Routes>

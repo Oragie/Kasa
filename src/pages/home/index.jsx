@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner"
-import homeBanner from "../../assets/img/homeBanner.png"
+import homeBanner from "../../assets/img/homeBanner"
 
 function Home() {
   

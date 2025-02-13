@@ -1,6 +1,6 @@
 
 
-import Logo from '../Logo/Logo.jsx'; // Importation du logo de l'application.
+import Logo from '../Logo'; // Importation du logo de l'application.
 import { NavLink } from 'react-router-dom'
 import './header.scss'
 

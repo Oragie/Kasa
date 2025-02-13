@@ -19,3 +19,5 @@ function Banner({ title, image, opacity }) {
   }
 
   export default Banner
+
+ 

@@ -1,9 +1,9 @@
-@use '../../utils/style/variables.scss' as variables;
+@use '../../styles/variables.scss';
 
 h4 {
     font-size: 96px;
     font-weight: 700;
-    color: variables.$--main-color;
+    color: variables.$main-color;
     text-align: center;
     margin: 113px 20px;
 }
@@ -12,7 +12,7 @@ h4 {
     font-size: 18px;
     font-weight: 500;
     text-align: center;
-    color: variables.$--main-color;
+    color: variables.$main-color;
     margin: 0px 20px;
 }
 
