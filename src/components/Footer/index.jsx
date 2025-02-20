@@ -1,12 +1,19 @@
-import Logo from "../Logo";
+import './footer.scss'
+import { Logo } from '../Logo'
 
-function Footer({ name }) {
-    return (
-        <footer className="footer">
-            <p>© 2023 {name}. Tous droits réservés.</p>
+
+function Footer() {
+
+  return (
+      <>
+        <footer>
+          <div className='componentFooterLogo'>
             <Logo />
+          </div>
+          <p className='pFooter'>© 2020 Kasa. All rights reserved</p>
         </footer>
-    );
+      </>
+  )
 }
 
-export default Footer;
+export default Footer

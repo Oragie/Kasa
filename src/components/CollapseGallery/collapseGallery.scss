@@ -1,0 +1,16 @@
+@use '../../styles/variables.scss';
+
+.collapseContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1240px;
+    margin: 0px 20px 19px 20px;
+}
+
+@media (min-width : 1040px) {
+    .collapseContent {
+        margin: 27px 208.5px 50px 208.5px;
+        gap: 30px;
+    }
+}
