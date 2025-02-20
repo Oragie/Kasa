@@ -2,11 +2,23 @@ import './logement.scss';
 import Carousel from "../../components/Carousel";
 import Collapse from '../../components/Collapse';
 import Rating from '../../components/Rating';
-import logements from "../../datas/logements.json";
+import { useEffect, useState } from 'react';
+import { getLogements } from '../api';
 import { useParams } from "react-router";
 import Error from "../404";
 
 function Logement() {
+
+    const [logements, setLogements] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getLogements();
+      setLogements(data);
+    }
+    fetchData();
+  }, []);
+
     const { id } = useParams(); // Récupération de l'ID depuis l'URL
     const logementData = logements.find((logement) => logement.id === id);
 

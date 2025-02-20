@@ -1,8 +1,19 @@
 import './collapseGallery.scss'
-import apropos from "../../../public/apropos.json"
+import { useEffect, useState } from 'react';
+import { getApropos } from '../api';
 import Collapse from '../Collapse'
 
 function CollapseGallery() {
+
+    const [apropos, setApropos] = useState([]);
+
+    useEffect(() => {
+      async function fetchData() {
+        const data = await getApropos();
+        setApropos(data);
+      }
+      fetchData();
+    }, []);
 
     return (
       <>
