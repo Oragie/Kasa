@@ -1,5 +1,5 @@
 import './footer.scss'
-import { Logo } from '../Logo'
+import { LogoFooter } from '../Logo'
 
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
       <>
         <footer>
           <div className='componentFooterLogo'>
-            <Logo />
+            <LogoFooter />
           </div>
           <p className='pFooter'>© 2020 Kasa. All rights reserved</p>
         </footer>

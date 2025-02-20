@@ -1,20 +1,24 @@
  
 function Logo (){
     return (
-        <>
-     {/* Lettre K */}
-   
-    <p className="logoK">K</p>
+    <>        
+        <img src="src\assets\img\logo.svg"
+        alt="Logo Icon"
+        className="logoIcon"/>
+    </>
+    );
+}
 
-     {/* Icône - Image */}
-    <img src="src\assets\img\logoIcon.png"
+function LogoFooter (){
+    return (
+    <>
+    <img src="src\assets\img\logo_footer.svg"
     alt="Logo Icon"
-    className="logoIcon"/>
-
-    {/* Lettre sa */}
-    <p className="logoSa">sa</p>
-</>
+    className="logoIconFooter"/>
+    </>
     );
 }
 
 export default Logo;
+export {LogoFooter};
+

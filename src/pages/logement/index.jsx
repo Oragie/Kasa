@@ -3,7 +3,7 @@ import Carousel from "../../components/Carousel";
 import Collapse from '../../components/Collapse';
 import Rating from '../../components/Rating';
 import { useEffect, useState } from 'react';
-import { getLogements } from '../api';
+import { getLogements } from '../../api/api';
 import { useParams } from "react-router";
 import Error from "../404";
 

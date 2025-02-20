@@ -1,6 +1,6 @@
 import './collapseGallery.scss'
 import { useEffect, useState } from 'react';
-import { getApropos } from '../api';
+import { getApropos } from '../../api/api';
 import Collapse from '../Collapse'
 
 function CollapseGallery() {
