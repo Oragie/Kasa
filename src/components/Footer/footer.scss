@@ -1,8 +1,8 @@
 @use '../../styles/variables.scss';
 
 footer {
-    background-color: variables.$defaultBackgroundFooter;
-    color: variables.$defaultFooterFontColor;
+    background-color: variables.$footer-Background-color;
+    color: variables.$Footer-Font-Color;
     display: flex;
     flex-direction: column;
     align-items: center;

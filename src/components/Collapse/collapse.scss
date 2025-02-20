@@ -7,8 +7,8 @@
 }
 
 .collapseHeader {
-    background-color: variables.$mainColor;
-    color: variables.$titleColor;
+    background-color: variables.$main-color;
+    color: variables.$title-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ h3 {
 }
 
 .collapseDescription {
-    background-color: variables.$secondaryBackgroundColor;
+    background-color: variables.$secondary-Background-color;
     // background-color: red;
     font-size: 12px;
     padding: 0px 20px; // état initial du padding à 0

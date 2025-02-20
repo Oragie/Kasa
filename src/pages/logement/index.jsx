@@ -1,5 +1,5 @@
 import './logement.scss';
-import Carousel from "../../components/Slideshow";
+import Carousel from "../../components/Carousel";
 import Collapse from '../../components/Collapse';
 import Rating from '../../components/Rating';
 import logements from "../../datas/logements.json";

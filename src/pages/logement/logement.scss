@@ -7,7 +7,7 @@
 h6 {
     font-size: 18px;
     font-weight: 500;
-    color: variables.$mainColor;
+    color: variables.$main-color;
     margin: 15px 0px 5px 0px;
     line-height: 1.5;
 }
@@ -21,7 +21,7 @@ h6 {
 .host {
     font-size: 12px;
     font-weight: 500;
-    color: variables.$mainColor;
+    color: variables.$main-color;
     width: 63px;
     text-align: right;
     margin: 0;
@@ -55,10 +55,10 @@ h6 {
 }
 
 .tagContent {
-    background-color: variables.$mainColor;
+    background-color: variables.$main-color;
     font-size: 10px;
     font-weight: 700;
-    color: variables.$titleColor;
+    color: variables.$title-color;
     min-width: 84px;
     height: 18px;
     align-content: center;
