@@ -1,5 +1,6 @@
 import Home from './pages/home'
-
+import Logement from './pages/logement'
+import About from './pages/about'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './pages/404'
@@ -16,7 +17,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
 
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<About />} />
             <Route path="/logement/:id" element={<Logement />} />
 
             <Route path="/*" element={<Error/>} />
