@@ -1,34 +1,38 @@
-import './carousel.scss';
-import PropTypes from 'prop-types';
-import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import "./carousel.scss";
+import PropTypes from "prop-types";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Passer à l'image suivante
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   // Revenir à l'image précédente
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   // Gestion de la navigation au clavier
   const handleKeyDown = (event) => {
-    if (event.key === 'ArrowRight' || event.key === ' ') {
-      event.preventDefault(); // Empêche le défilement de la page
+    event.preventDefault(); // Empêche le défilement de la page
+    if (event.key === "ArrowRight") {
       nextSlide();
-    } else if (event.key === 'ArrowLeft') {
+    } else if (event.key === "ArrowLeft") {
       prevSlide();
     }
   };
-
-  // Ajouter l'écouteur au niveau global
-  window.onkeydown = handleKeyDown;
 
   // Si une seule image : pas de boutons ni de compteur
   if (images.length === 1) {
@@ -42,7 +46,7 @@ function Carousel({ images }) {
   }
 
   return (
-    <div className="carousel">
+    <div className="carousel" onKeyDown={handleKeyDown} tabIndex="0">
       <div
         className="slides"
         style={{

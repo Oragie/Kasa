@@ -1,24 +1,22 @@
- 
-function Logo (){
-    return (
-    <>        
-        <img src="src\assets\img\logo.svg"
-        alt="Logo Icon"
-        className="logoIcon"/>
+function Logo() {
+  return (
+    <>
+      <img src="src\assets\img\logo.svg" alt="Logo Icon" className="logoIcon" />
     </>
-    );
+  );
 }
 
-function LogoFooter (){
-    return (
+function LogoFooter() {
+  return (
     <>
-    <img src="src\assets\img\logo_footer.svg"
-    alt="Logo Icon"
-    className="logoIconFooter"/>
+      <img
+        src="src\assets\img\logo_footer.svg"
+        alt="Logo Icon"
+        className="logoIconFooter"
+      />
     </>
-    );
+  );
 }
 
 export default Logo;
-export {LogoFooter};
-
+export { LogoFooter };
