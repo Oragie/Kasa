@@ -1,21 +1,11 @@
+import logo from "../../assets/img/logo.svg"; // Importation de l'image du logo
+
 function Logo() {
-  return (
-    <>
-      <img src="src\assets\img\logo.svg" alt="Logo Icon" className="logoIcon" />
-    </>
-  );
+  return <img src={logo} alt="Logo Icon" className="logoIcon" />;
 }
 
 function LogoFooter() {
-  return (
-    <>
-      <img
-        src="src\assets\img\logo_footer.svg"
-        alt="Logo Icon"
-        className="logoIconFooter"
-      />
-    </>
-  );
+  return <img src={logo} alt="Logo Icon" className="logoIconFooter" />;
 }
 
 export default Logo;
